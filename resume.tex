@@ -1,0 +1,86 @@
+% !TEX program = xelatex
+
+\documentclass{resume}
+%\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+%\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+
+\begin{document}
+\pagenumbering{gobble} % suppress displaying page number
+
+\name{Xiaoqiang Wang}
+\basicInfo{
+  \email{3160101819@zju.edu.cn} \textperiodcentered\
+  \phone{(+86) 188-6811-6331} \textperiodcentered\
+  \github[Robert-xiaoqiang]{https://github.com/Robert-xiaoqiang} \textperiodcentered\
+  \large Research Intern(07/2019, >= 2 months)
+  }
+
+%\section{\faHeart\ Objective}
+% \begin{itemize}[parsep=0.5ex]
+%  \item Web Back-end Internship
+% \end{itemize}
+
+\section{\faGraduationCap\ Education}
+\datedsubsection{\textbf{ZheJiang University}, Computer Science and Technology}{2016-09 -- Present}
+\begin{itemize}
+  \item GPA 3.88/4
+  \item \datedline{First-Class Scholarship for Outstanding Merits (Top 10\%)}{2017-10}
+  \item \datedline{Second-Class Scholarship for Outstanding Merits (Top 30\%)}{2018-10}
+  \item \datedline{Second-Class Research Innovation Scholarship }{2018-10}
+\end{itemize}
+
+\section{\faGithubAlt\ Individual Projects}
+
+\datedsubsection{\textbf{EigenFace}}{\url{https://github.com/Robert-xiaoqiang/EigenFace}}
+\textbf{An implementation of PCA for face recognition based on OpenCV}
+\begin{itemize}
+  \item Image preprocess, face alignment with Haar feature
+  \item Eigen value decomposition of covariance matrix of the face dataset
+  \item Similarity evaluation based on Euclidean distance
+\end{itemize}
+
+\datedsubsection{\textbf{ML Naive Projects}}{\url{https://github.com/Robert-xiaoqiang/ML-Pits}}
+\textbf{ML classic algorithms or models}
+\begin{itemize}
+  \item CNN, LSTM, SVM, CART, Bayesian for classification
+  \item Ensemble Learning such as AdaBoost, random forest
+  \item Hierarchy Cluster, segmentation
+\end{itemize}
+
+\datedsubsection{\textbf{MiniOS Kernel}}{\url{https://github.com/Robert-xiaoqiang/OSProject}}
+\textbf{An Operating System kernel based on MIPS32 architecture running on FPGA 5-stage pipeline CPU}
+\begin{itemize}
+  \item Virtual File System, Implementation of FAT32 and ext2 file system, implementation of system calls and file commands such as \textbf{cd, ls, cat}
+  \item Process Schedule, Multiple queues with feedback with the help of my classmates
+\end{itemize}
+
+\datedsubsection{\textbf{Naive DBMS}}{\url{https://github.com/Robert-xiaoqiang/MiniSQL-TeamLanTianLiuShe}}
+\textbf{A simple DBMS for ZJU DataBase System curriculum project}
+\begin{itemize}
+  \item Index Module, Implementation of B+Tree in memory
+  \item SQL Interpreter, Based on Lex, Yacc
+\end{itemize}
+
+\section{\faCogs\ Skills}
+\begin{itemize}[parsep=0.5ex]
+  \item \textbf{Programming Language}:
+  \begin{itemize}
+        \item C++/Python/C/Bash
+        \item Java/Golang/MATLAB
+  \end{itemize}
+  \item \textbf{Development Skills and Tools}:
+   \begin{itemize}
+         \item OpenCV, Qt, Django
+         \item TensorFlow, PyTorch, MySQL, Hadoop, Redis, Git
+   \end{itemize}
+\end{itemize}
+
+\section{\faInfo\ Other}
+\begin{itemize}[parsep=0.5ex]
+  \item \textbf{Home:} \url{http://qindomitable.top/}
+  \item \textbf{Language:} English - read docs, speak fluently，Chinese - native level
+  \item \textbf{Hobbies:} Basketball
+  \item \textbf{Self Assessment:} Cautious, willing to learn
+\end{itemize}
+
+\end{document}

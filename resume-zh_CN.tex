@@ -1,0 +1,89 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% !Mode:: "TeX:UTF-8"
+
+\documentclass{resume}
+\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+% \usepackage{NotoSansSC_external}
+% \usepackage{NotoSerifCJKsc_external}
+% \usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+\usepackage{linespacing_fix} % disable extra space before next section
+\usepackage{cite}
+
+% \setCJKmainfont[BoldFont=SimHei,ItalicFont=KaiTi_GB2312]{SimSun}
+\begin{document}
+\pagenumbering{gobble} % suppress displaying page number
+
+\name{王晓强}
+
+\basicInfo{
+  \email{3160101819@zju.edu.cn} \textperiodcentered\ 
+  \phone{(+86) 188-6811-6331} \textperiodcentered\ 
+  \github[Robert-xiaoqiang]{https://github.com/Robert-xiaoqiang} \textperiodcentered\
+  \large 后台开发实习生
+}
+
+\section{\faGraduationCap\ 教育经历}
+\datedsubsection{\textbf{浙江大学}, 计算机科学与技术}{2016 年 9月 -- 现在}
+\begin{itemize}
+	\item GPA 4.39/5
+	\item \datedline{学业一等奖学金 (前10\%)}{2017 年 10月}
+	\item \datedline{学业二等奖学金 (前30\%)}{2018 年 10月}
+\end{itemize}
+
+
+\section{\faGithubAlt\ 个人项目}
+
+\datedsubsection{\textbf{DSView}}{\url{https://github.com/SummerZJU/CSummerZJU}}
+\textbf{基于Qt, MVVM设计框架实现树数据结构的可视化}
+\begin{itemize}
+  \item 负责Model层, 实现简易实现AVL, 红黑树, 二项队列等数据结构
+  \item 封装ViewModel层若干命令, 使用Appveyor进行持续集成, 初次体会到解耦, 协同开发的重要性
+\end{itemize}
+
+\datedsubsection{\textbf{QBMS}}{\url{https://github.com/Robert-xiaoqiang/QIndomitable-Book-Management-System}}
+\textbf{基于Python, 设计图书管理(用户注册, 借书, 还书)的Web应用程序}
+\begin{itemize}
+  \item HTTP服务器编程使用Django框架, DBMS使用MySQL
+  \item Web前端使用Bootstrap3组件库
+\end{itemize}
+
+\datedsubsection{\textbf{简易DBMS}}{\url{https://github.com/Robert-xiaoqiang/MiniSQL-TeamLanTianLiuShe}}
+为课程数据库系统设计的简易DBMS
+\begin{itemize}
+  \item 负责索引管理, 实现了内存B+Tree
+  \item 实现SQL语法子集的解释器, 基于Lex, Yacc
+\end{itemize}
+
+\datedsubsection{\textbf{MiniOS内核}}{\url{https://github.com/Robert-xiaoqiang/OSProject}}
+\textbf{基于MIPS-SDK/GNU交叉编译工具链运行在FPGA流水线CPU上的MIPS32架构操作系统内核}
+\begin{itemize}
+  \item 负责虚拟文件系统, 实现FAT32, ext2文件系统, 类Linux系统调用和文件命令(cd, ls, cat等)
+  \item 合作完成多级优先队列带反馈的进程调度算法
+  \item 完整的内核还支持分页式物理/虚拟内存管理, 用户态程序的加载, 虚拟地址翻译, 进程创建
+\end{itemize}
+
+
+\section{\faCogs\ 技能}
+\begin{itemize}[parsep=0.5ex]
+  \item \textbf{编程语言}:
+	\begin{itemize}
+    	  \item C++/C/Python
+       \item Java/JavaScript/Golang/Bash/Verilog
+	\end{itemize}
+  \item \textbf{开发技能和工具}:
+	 \begin{itemize}
+    	   \item Django, Qt, OpenCV, MySQL, OpenGL, React.JS
+	   \item Visual Studio, CLion, eclipse, IDEA, Git, WebStorm
+	 \end{itemize}
+\end{itemize}
+
+\section{\faInfo\ 其他}
+\begin{itemize}[parsep=0.5ex]
+  \item 主页: \url{http://qindomitable.top/}
+  \item 语言: English - 阅读文档, 流利表达 (CET6 480)，汉语 - 母语水平
+  \item 爱好: 篮球
+  \item 自我评价: 细心, 乐于学习
+\end{itemize}
+
+\end{document}
